@@ -30,3 +30,20 @@
         [7] Hello World
 
 */
+#include <stdio.h>
+int main(){
+    int num ;
+
+    printf("Enter the number of lines: ") ;
+    scanf("%d" ,&num) ;
+
+    for (int i = 1; i <= num; i++) {
+        if (num % 2 == 0 ) {
+            printf("(%d) Hello World\n", i) ;
+        }
+        else {
+            printf("[%d] Hello World\n", i) ;
+        }
+    }
+    return 0 ;
+}
